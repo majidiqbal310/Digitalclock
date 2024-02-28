@@ -46,9 +46,10 @@
 // while (i <= 25) {
 //     console.log(i)
 //     i++;
-// }
-let i = 0
-do { 
-console.log(i)
-i++
-} while (i <= 100);
+// // }
+// let i = 0
+// do { 
+// console.log(i)
+// i++
+// } while (i <= 100);
+

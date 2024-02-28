@@ -6,9 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <img src="/download (17).jpeg" alt="" class="img" width="200px">
+
 </body>
-<Script src="digitalclock.js">
- 
+<Script>
+ let theImg = document.querySelector(".img")
+ let btn = document 
+ btn.addEventListener("mouseover", function change (e){
+    theImg.style.position = "absolute"
+    theImg.style.left = `${e.x}px`
+    theImg.style.top = `${e.y}px`
+    console.log(e.x, e.y)
+ })
 </Script>
 </html>
