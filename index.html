@@ -6,17 +6,38 @@
     <title>Document</title>
 </head>
 <body>
-    <img src="/download (17).jpeg" alt="" class="img" width="200px">
+    <!-- <img src="/download (17).jpeg" alt="" class="img" width="200px"> -->
+    <input type="text" name="" id="theText" onfocus= "xyz()">
+    <input type="text" name="" id="" onblur= "">
+    
+
+     <form onsubmit="checkAddress('email');">
+        Email:
+        <input type="text" id="email">
+        <input type="submit" value="submit">
+        </form>
+
+        <p id="pra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatibus illo nobis adipisci amet reiciendis molestiae ratione possimus cupiditate aliquam! Iure delectus praesentium quidem excepturi commodi porro id pariatur enim!</p>
+        <h3 id="h3"></h3>
 
 </body>
 <Script>
- let theImg = document.querySelector(".img")
- let btn = document 
- btn.addEventListener("mouseover", function change (e){
-    theImg.style.position = "absolute"
-    theImg.style.left = `${e.x}px`
-    theImg.style.top = `${e.y}px`
-    console.log(e.x, e.y)
- })
+//  let theImg = document.querySelector(".img")
+//  let btn = document 
+//  btn.addEventListener("mouseover", function change (e){
+//     theImg.style.position = "absolute"
+//     theImg.style.left = `${e.x}px`
+//     theImg.style.top = `${e.y}px`
+//     console.log(e.x, e.y)
+//  })
+
+function xyz(){
+    document.querySelector("#theText").style.backgroundColor = "blue"
+}
+
+let pra= document.getElementById("pra").textContent
+console.log(pra)
+let h3 = document.getElementById("h3").innerHTML
+
 </Script>
 </html>
