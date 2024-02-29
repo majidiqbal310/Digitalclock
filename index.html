@@ -20,6 +20,13 @@
         <p id="pra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatibus illo nobis adipisci amet reiciendis molestiae ratione possimus cupiditate aliquam! Iure delectus praesentium quidem excepturi commodi porro id pariatur enim!</p>
         <h3 id="h3"></h3>
 
+        <form>
+            Zip;<br>
+            <input type="text" id="Zip" onblur="fillcity()"><br>
+        City;<br>
+        <input type="text" id="city"> 
+        </form>
+
 </body>
 <Script>
 //  let theImg = document.querySelector(".img")
@@ -38,6 +45,23 @@ function xyz(){
 let pra= document.getElementById("pra").textContent
 console.log(pra)
 let h3 = document.getElementById("h3").innerHTML
+
+function fillcity(){
+    var cityName;
+    var zipEntered = document.getElementById("Zip").value;
+    switch(zipEntered){
+        case "1":
+            cityName = "Peshawar";
+            break;
+            case "2":
+                cityName = "Islamabad";
+                break;
+    }
+    document.getElementById("city").value = cityName;
+}
+
+
+
 
 </Script>
 </html>
